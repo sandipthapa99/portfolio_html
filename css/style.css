@@ -87,7 +87,6 @@ li a:hover{
 .child_left p{
     margin-top: 0;
     color: #777;
-
 }
 
 .child_left ul{
@@ -95,17 +94,21 @@ li a:hover{
     padding: 0;
     list-style-type: none;
     font-size: 18px;
+    display: inline-flex;
 }
 
 .child_left li{
-    padding: 5px 0;
+    padding: 5px 10px;
+    font-size: 24px;
     color: #666;
 }
 .child_left li a{
     color: #666;
     padding-left: 10px;
 }
-
+.child_left li a:hover{
+    color: #0984e3;
+}
 
 .child_right img{
     margin-left: 120px;
@@ -140,8 +143,11 @@ li a:hover{
     border-radius: 5px;
     display: flex;
 }
+
+.experience_card{
+    margin-bottom: 100px;
+}
 .card_left{
-    /* border: 3px solid red; */
     width: 50%;
 }
 .card_left img, .card_right img{
@@ -149,7 +155,6 @@ li a:hover{
     max-width: 90%;
 }
 .card_right{
-    /* border: 3px solid blue; */
     width: 50%;
 }
 
@@ -251,4 +256,26 @@ li a:hover{
     border-radius: 5px;
     font-size: 16px;
 }
+.proj_button a:hover{
+    background-color: #273C75;
+    transition-duration: .8s;
+}
+.techs ul{
+    padding: 0;
+}
+.techs ul li{
+    margin: 0px 3px;
+    border: 1px solid #0984e3;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 4px 5px;
+    display: inline-block;
+    font-size: 12px;
+}
 
+.copy{
+    float:right;
+    width: 100%;
+    text-align: center  ;
+    font-size: 16px;
+}
