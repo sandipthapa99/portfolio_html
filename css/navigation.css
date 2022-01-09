@@ -3,16 +3,23 @@
 body{
     margin: 0;
     font-family: 'Poppins';
-    background-color: #f1f1f1;
+    background-color: #fff;
+    font-size: 18px;
 }
 
+.hero{
+    margin-bottom: 100px;
+}
 .container{
-    padding: 0 70px;
+    padding: 0 120px;
 }
 /* Navbar */
 nav{
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
+    width: 100%;
+    position: fixed;
+    
 }
 
 .nav_wrapper{
@@ -24,7 +31,6 @@ nav{
     margin: 0 auto;
 }
 
-
 .nav_ul li{
     display: inline;
     padding: 0 10px;
@@ -33,22 +39,24 @@ nav{
 li a{
     text-decoration: none;
     font-weight: 500;
+    color: #000;
 }
 li a:active, a:visited{
     color: #000;
 }
 
 li a:hover{
-    color: rgb(31, 31, 104);
+    color: #273C75;
 
 }
 
 /* Hero Section */
 .hero{
-    padding: 20px 0;
+    padding: 100px 0;
+    margin-bottom: 50px;
 }
 .hero_container{
-    border: 3px solid #000;
+    /* border: 3px solid #000; */
     margin: 30px 0;
     padding: 10px 0;
     display: flex;
@@ -57,31 +65,190 @@ li a:hover{
 .hero_child{
     width: 50%;
     padding: 20px;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 
-.child_one h1{
-    /* width: 50%; */
-    font-size: 40px;
+.child_left{
+    margin: auto;
+}
+.child_left h1{
+    font-size: 62px;
     margin: 0;
     text-transform: capitalize;
+    color: #273c75;
 }
-.child_one h4{
-    font-size: 24px;
+.child_left h4{
+    font-size: 36px;
     font-weight: 500;
     margin-top: 0;
     color: #1a1818;
-    margin-bottom: 15x;
+    margin-bottom: 0px;
+}
+.child_left p{
+    margin-top: 0;
+    color: #777;
+
 }
 
-.child_one ul{
+.child_left ul{
     margin: 0;
     padding: 0;
     list-style-type: none;
     font-size: 18px;
 }
 
-.child_one li a{
-    color: #000;
+.child_left li{
+    padding: 5px 0;
+    color: #666;
+}
+.child_left li a{
+    color: #666;
     padding-left: 10px;
 }
+
+
+.child_right img{
+    margin-left: 120px;
+    border-radius: 50%;
+    height: 360px;
+    width: auto;
+}
+
+/* Education section */
+
+.section_title{
+    text-align: center;
+    align-items: center;
+}
+.section_title h2{
+    font-size: 40px;
+    padding-top: 40px;
+}
+.section_title p{
+    padding: 0;
+}
+
+/* Education */
+.education_container{
+    background-color: #f1f1f1;
+    padding: 20px 0;
+}
+.card{
+    background-color: #fff;
+    border: 3px solid #fff;
+    box-shadow: 0px 10px 20px 4px #00000010;
+    border-radius: 5px;
+    display: flex;
+}
+.card_left{
+    /* border: 3px solid red; */
+    width: 50%;
+}
+.card_left img, .card_right img{
+    max-height: 90%;
+    max-width: 90%;
+}
+.card_right{
+    /* border: 3px solid blue; */
+    width: 50%;
+}
+
+.inner_card{
+    background-color: #f1f1f160;
+    padding: 10px;
+    width: 93%;
+    text-align: left;
+    border-radius: 5px;
+    display: flex;
+    margin: 10px 0 10px 10px;
+    /* box-shadow: 0px 10px 20px 4px #00000010; */
+}
+.innercard_content{
+    padding: 10px;
+}
+.inner_card h4{
+    margin: 0;
+    font-weight: 500;
+}
+
+.inner_card a{
+    text-decoration: none;
+    color:#0984e3 ;
+    font-weight: 500;
+    margin: 0;
+}
+.inner_card h5{
+    margin: 0;
+    color:#0984e3 ;
+    font-weight: 500;
+}
+.inner_card p{
+    color:#888 ;
+    font-weight: 400;
+    font-size: 14px;
+}
+.inner_card h6,.inner_card ul{
+    font-size: 16px;
+    margin: 5px 0;
+}
+.inner_card li{
+    color: #888;
+}
+
+.row{
+    margin: 0 -5px;
+}
+.column{
+    float: left;
+    width: 30%;
+    padding: 10px 20px;
+}
+.proj_card{
+    background-color: #fff;
+    padding: 10px;
+    width: 93%;
+    text-align: left;
+    border-radius: 5px;
+    display: flex;
+    margin: 10px 0 10px 10px;
+    box-shadow: 0px 10px 20px 4px #00000010;
+}
+.projcard_content{
+    padding: 10px;
+    
+}
+.projcard_content p{
+    display: -webkit-box;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+.projcard_content h3{
+    font-weight: 500;
+}
+.proj_card a{
+    text-decoration: none;
+    color:#fff ;
+    font-weight: 500;
+    margin: 0;
+}
+.proj_card p{
+    color:#888 ;
+    font-weight: 400;
+    font-size: 14px;
+}
+.proj_button{
+    text-align: center;
+    margin: 30px 0;
+}
+.proj_button a{
+    background-color: #0984e3;
+    color: #fff;
+    border: none;
+    padding: 10px 80px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
