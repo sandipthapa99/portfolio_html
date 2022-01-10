@@ -371,7 +371,7 @@ li a:hover{
     }
     .child_right img{
         margin: 0;
-        padding-left: 30px;
+        padding:0;
         height: 240px;
         /* height: 240px; 384, 414 480 640 768 991 */
     }
