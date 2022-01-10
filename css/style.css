@@ -35,8 +35,21 @@ nav{
     display: inline;
     padding: 0 10px;
 }
-.icon{
+.toggle_btn{
+    padding: 10px;
+    position: relative;
+    top: 5px;
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle_btn .bar{
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 10px;
 }
 
 li a{
@@ -363,12 +376,24 @@ li a:hover{
 }
 
 @media only screen and (max-width: 510px){
-    .nav_ul li{
+    .nav_ul{
         display: none;
-        padding: 0 10px;
+        flex-direction: column;
+        text-align: center;
     }
-    .icon{
-        display: block;
+    .nav_ul li{
+        padding: 10px 0;
+    }
+    .toggle_btn{
+        display: flex;
+    }
+    .nav_wrapper{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .nav_ul_active{
+        display: flex;
+
     }
 }
 
