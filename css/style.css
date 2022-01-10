@@ -46,7 +46,7 @@ li a:active, a:visited{
 }
 
 li a:hover{
-    color: #273C75;
+    color: #0984e3;
 
 }
 
@@ -279,3 +279,135 @@ li a:hover{
     text-align: center  ;
     font-size: 16px;
 }
+
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 0 30px;
+    }
+    .child_left, .child_right{
+        width: 100%;
+    }
+    .child_left h1{
+        font-size: 42px;
+    }
+    .child_left h4{
+        font-size: 30px;
+    }
+    .child_right{
+        padding: 0;
+        margin: 0;
+    }
+    .child_right img{
+        margin-left: 40px;
+        padding: 0;
+        /* height: 240px; 384, 414 480 640 768 991 */
+    }
+    .edu_leftcard{
+        display: none;
+        width: 0;
+    }
+    .edu_rightcard{
+        width: 100%;
+        margin: 10px;
+    }
+    .exp_right{
+        display: none;
+        width: 0;
+    }
+    .exp_left{
+        width: 105%;
+    }
+    .column{
+        width: 44%;
+    }
+    .proj_card{
+        margin: 0;
+    }
+    .proj_button a{
+        padding: 10px 40px;
+
+    }
+
+}
+@media only screen and (max-width:716px){
+    .column{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .proj_card{
+        margin: 0;
+    }
+    .proj_button a{
+        padding: 10px 80px;
+
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .hero_container{
+        display: block;
+    }
+    .child_left{
+        text-align: center;
+    }
+    .child_right{
+        text-align: center;
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:415px){
+    .hero_container{
+        display: block;
+    }
+    .child_left, .child_right{
+        text-align: center;
+    }
+    .child_left h1{
+        font-size: 30px;
+    }
+    .child_left h4{
+        font-size: 20px;
+    }
+    .child_right img{
+        margin: 0;
+        padding-left: 30px;
+        height: 240px;
+        /* height: 240px; 384, 414 480 640 768 991 */
+    }
+    .edu_leftcard{
+        width: 0;
+    }
+    .card_left img{
+        display: none;
+    }
+    .edu_rightcard{
+        width: 90%;
+        margin: 10px;
+    }
+    .section_title h2{
+        font-size: 24px;
+    }
+
+    .exp_right{
+        display: none;
+        width: 0;
+    }
+    .exp_left{
+        width: 95%;
+    }
+    .column{
+        float: left;
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .proj_card{
+        margin: 0;
+    }
+    .proj_button a{
+        padding: 10px 40px;
+
+    }
+}
+
+
