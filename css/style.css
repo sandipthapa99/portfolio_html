@@ -35,6 +35,9 @@ nav{
     display: inline;
     padding: 0 10px;
 }
+.icon{
+    display: none;
+}
 
 li a{
     text-decoration: none;
@@ -284,6 +287,9 @@ li a:hover{
     .container{
         padding: 0 30px;
     }
+    nav {
+        padding: 0;
+    }
     .child_left, .child_right{
         width: 100%;
     }
@@ -353,6 +359,16 @@ li a:hover{
     .child_right{
         text-align: center;
         width: 95%;
+    }
+}
+
+@media only screen and (max-width: 510px){
+    .nav_ul li{
+        display: none;
+        padding: 0 10px;
+    }
+    .icon{
+        display: block;
     }
 }
 
