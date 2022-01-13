@@ -4,234 +4,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-    <title>Portfolio</title>
+    <title>Cagtu | Careers</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav>
+    <!-- Nav Bar -->
+    <div class="nav">
         <div class="container">
             <div class="nav_wrapper">
-                <ul class="nav_ul" id="navbar">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#edu">Education</a></li>
-                    <li><a href="#experiences">Experiences</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                </ul>
-                <a href="#" class="toggle_btn" onclick="myFunc();">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                  </a>
-            </div>
-        </div>
-    </nav>
-    
-    <!-- Hero section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero_container">
-                <div class="hero_child child_left">
-                    <h1>Sandip Thapa</h1>
-                    <h4>Tech Enthusiast</h4>
-                    <p>I am a Computer Science Graduate and frontend development enthusiast. Currently looking for new opportunities.</p>
+                <div class="logo">
+                    <a href="#"><img src="images/logo-white.png" alt=""></a>
+                </div>
+                <div class="nav-links" id="nav-links">
                     <ul>
-                        <li><a href="https://www.facebook.com/sandipthapa99" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-                        <li><a href="https://github.com/sandipthapa99" target="_blank"><i class="fa fa-github"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/sandipthapa99/" target="_blank"><i class="fa fa-linkedin"></i></a></li>                    </ul>
-                    
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="#"><li>Career</li></a>
+                    </ul>
                 </div>
-                <div class="hero_child child_right">
-                    <img src="images/image.jpg" alt="">
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <!-- Education Section -->
-    <section id="edu">
-        <div class="education_container">
-            <div class="section_title">
-                <h2>Education</h2>
-            </div>
-            <div class="container">
-                <div class="card">
-                    <div class="card_left edu_leftcard">
-                        <img src="images/lesson.png" alt="">
-                    </div>
-                    <div class="card_right edu_rightcard">
-                        <div class="inner_card">
-                            <div class="innercard_content">
-                                <h4>Bsc (Hons) Computer Science</h4>
-                                    <a href="https://heraldcollege.edu.np/">Herald College</a>
-                                    <h5>May 2018 - May 2021</h5>
-                                    <p>The College is affiliated to University of Wolverhampton, UK. In 2021, I graduated with BSc (Hons) in Computer Science Degree. The main focus of the degree is in Artificial Intelligence.
-                                    </p>
-                            </div>
-                        </div>
-                        <div class="inner_card">
-                            <div class="innercard_content">
-                                <h4>Intermediate (10 + 2)</h4>
-                                    <a href="https://www.bernhardt.edu.np/">Kathmandu Bernhardt College</a>
-                                    <h5>2016 - 2018</h5>
-                                    <p>Completed my High School from this college in Physical Science Major. During these two years of exposure into science world, I got fascinated towards Astrophysics.
-                                    </p>
-                            </div>
-                        </div>
-                        <div class="inner_card">
-                            <div class="innercard_content">
-                                <h4>School Leaving Certificate</h4>
-                                    <a>Shree Goganpani Secondary School</a>
-                                    <h5>2016</h5>
-                                    <p>The College is affiliated to University of Wolverhampton, UK. In 2021, I graduated with BSc (Hons) in Computer Science Degree. The main focus of the degree is in Artificial Intelligence.
-                                    </p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="toggle">
+                    <a href="#" class="toggle_btn" onclick="myFunc()">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
-
-     <!-- Experiences Section -->
-     <section id="experiences">
-        <div class="education_container">
-            <div class="section_title">
-                <h2>Experiences</h2>
+            <div class="nav-links-active-hide" id="nav-links-active-hide">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Career</li></a>
+                </ul>
             </div>
-            <div class="container">
-                <div class="card experience_card">
-                    <div class="card_left exp_left">
-                        <div class="inner_card">
-                            <div class="innercard_content">
-                                <h4>Frontend Developer Internship</h4>
-                                    <a href="https://ekbana.com/">Ekbana Solutions Pvt. Ltd.</a>
-                                    <h5>Sep 2021 - Dec 2021</h5>
-                                    <h6>Tasks :</h6>
-                                    <ul>
-                                        <li>Learnt about different SDLC approaches</li>
-                                        <li>Did minor projects on Javascript</li>
-                                        <li>Did a major project on React JS</li>
-                                    </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card_right exp_right">
-                        <img src="images/code.png" alt="">
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-
-     <!-- Portfolio Section -->
-     <section id="portfolio">
-        <div class="section_title">
-            <h2>Portfolio</h2>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="column">
-                    <div class="proj_card">
-                        <div class="projcard_content">
-                            <h3>eCommerce Website</h3>
-                            <p>An eCommerce website built as the major project during my internship period at Ekbana solutions.
-                            </p>
-                            <div class="techs">
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>React</li>
-                                    <li>Bootstrap</li>
-                                </ul>
-                            </div>
-                            <div class="proj_button">
-                                <a href="https://react-supermarket-theme.herokuapp.com/" target="_blank">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <div class="proj_card">
-                        <div class="projcard_content">
-                            <h3>Portfolio Website</h3>
-                            <p>
-                                A personal portfolio website, showcasing my interests, knowledge, experiences, skills and projects that I have done.
-                            </p>
-                            <div class="techs">
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Bootstrap</li>
-                                </ul>
-                            </div>
-                            <div class="proj_button">
-                                <a href="https://www.sandipthapa.com.np/" target="_blank">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <div class="proj_card">
-                        <div class="projcard_content">
-                            <h3>Learn & Quiz</h3>
-                            <p>
-                                Learn & Quiz is an e-learning web application which was initially a college project. As the project progressed, I wanted to try new things that were out of scope for college project.
-                            </p>
-                            <div class="techs">
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Django</li>
-                                </ul>
-                            </div>
-                            <div class="proj_button">
-                                <a href="https://github.com/sandipthapa99/Quiz-Web-App" target="_blank">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <div class="proj_card">
-                        <div class="projcard_content">
-                            <h3>Tic Tac Toe</h3>
-                            <p>
-                                A GUI program built for Tic Tac Toe game using Python Tkinter. The program is developed as a multiplayer game rather than playing against the computer.
-                            </p>
-                            <div class="techs">
-                                <ul>
-                                    <li>Python</li>
-                                    <li>Tkinter</li>
-                                </ul>
-                            </div>
-                            <div class="proj_button">
-                                <a href="https://github.com/sandipthapa99/Tic-Tac-Toe-Python-GUI" target="_blank">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="copy">
-        <div class="container">
-            <p>&copy; 2022 Sandip Thapa</p>
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <!-- Career page title -->
+    <div class="section-title">
+        <div class="container">
+            <h1>Current job openings</h1>
+        </div>
+    </div> 
+
+    <div class="cards-section">
+        <div class="container">
+            <div class="card-holder">
+                <div class="row">
+                    <div class="column">
+                        <div class="content-card">
+                            <div class="card-inner">
+                                <h3>UI/UX Designer</h3>
+                                <h4>Senior Level</h4>
+                                <a href="ui.html" class="find-more">Find More <i class="fa fa-arrow-circle-o-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="content-card">
+                            <div class="card-inner">
+                                <h3>Backend Developer (Django)</h3>
+                                <h4>Senior Level</h4>    
+                                <a href="django.html" class="find-more">Find More <i class="fa fa-arrow-circle-o-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="content-card">
+                            <div class="card-inner">
+                                <h3>Backend Developer (Django)</h3>
+                                <h4>Junior Level</h4>                                
+                                <a href="django.html" class="find-more">Find More <i class="fa fa-arrow-circle-o-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="content-card">
+                            <div class="card-inner">
+                                <h3>Frontend Developer (React JS)</h3>
+                                <h4>Senior Level</h4>                                
+                                <a href="react.html" class="find-more">Find More <i class="fa fa-arrow-circle-o-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="content-card">
+                            <div class="card-inner">
+                                <h3>Mobile App Developer (Flutter)</h3>
+                                <h4>Senior Level</h4>                                
+                                <a href="flutter.html" class="find-more">Find More <i class="fa fa-arrow-circle-o-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="content-card">
+                            <div class="card-inner">
+                                <h3>Mobile App Developer (Flutter)</h3>
+                                <h4>Junior Level</h4>                                
+                                <a href="flutter.html" class="find-more">Find More <i class="fa fa-arrow-circle-o-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer">
+        <div class="container">
+            <div class="upper-footer">
+                <div class="footer-inner">
+                    <div class="row">
+                        <div class="fcolumn">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="">Career</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="fcolumn">
+                            <h3>Contact Us</h3>
+                            <ul>
+                                <li>Cagtu, Nepal</li>
+                                <li>Kathmandu, Nepal</li>
+                                <li>+977- 9823416855</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row social-media">
+                        <div class="fcolumn">
+                            <h3>Social Links</h3>
+                            <div class="social">
+                                <a href="https://www.facebook.com/cagtuaustralia" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/company/cagtu/mycompany/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://twitter.com/cagtuaustralia" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-footer">
+                <p>&copy; Copyright <strong> Cagtu Nepal Pvt. Ltd.</strong> All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/nav.js"></script>
 </body>
 </html>

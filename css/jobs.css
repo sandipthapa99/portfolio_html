@@ -1,0 +1,168 @@
+
+
+.section-title{
+    text-align: left;
+    padding: 40px 0;
+}
+.section-title h1{
+    color: #060606;
+    font-weight: 600;
+    font-size: 32px;
+}
+.job-details{
+    /* border: 3px solid; */
+    display: flex;
+}
+.job-desc{
+    width: 60%;
+    padding-right: 40px;
+    /* border: 3px solid blue; */
+}
+.job-desc h2{
+    font-weight: 600;
+    font-size: 18px;
+}
+.upper-desc ol li, .lower-desc ol li{
+    padding-bottom: 8px;
+}
+.form{
+    width: 40%;
+    /* border: 3px solid red; */
+}
+
+.extra-info{
+    margin: 40px 0 0 0;
+}
+.extra-info p{
+    margin: 0;
+    padding: 5px 0 0 0;
+    font-weight: 700;
+}
+.extra-info span{
+    font-weight: 500;
+    padding-left: 10px;
+    color: #111;
+}
+.form{
+    padding: 10px;
+}
+.form-wrapper{
+    padding:0 20px;
+    border: 1px solid #00000020;
+}
+.form-wrapper p a{
+    text-decoration: none;
+    color: #4fa6d5;
+    padding: 0 0 0 5px;
+}
+.form-wrapper p a:hover{
+    color:#45beff;
+    transition-duration: .2s;
+}
+
+.form-wrapper img{
+    max-width: 100%;
+}
+.form-wrapper label{
+    font-size: 16px;
+}
+.form-wrapper span{
+    color: #ff0000;
+    margin-left: 5px;
+}
+.back{
+    margin: 40px 0 0 0;
+}
+
+.back a{
+    text-decoration: none;
+    color: #06438c;
+}
+.back a:hover{
+    text-decoration: none;
+    color: #0d54ac;
+}
+.back a i{
+    font-size: 14px;
+    padding: 0 5px 0 0;
+}
+
+.form input[type="text"], input[type="email"], input[type="submit"]{
+    margin:10px 0;
+    width: 100%;
+    padding: 12px 0;
+}
+.form input[type="file"]{
+    /* position: absolute; */
+    /* z-index: 1000; */
+    opacity: 50;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    height: 100%;
+    font-size: 16px;
+    width: 100%;
+}
+
+.resume{
+    margin-bottom: 20px;
+}
+.check{
+    margin-top: 40px;
+    display: inline;
+}
+.check label{
+    font-size: 13px;
+    font-weight: 400;
+    color: #666;
+    /* vertical-align: middle; */
+}
+.form input[type="checkbox"]{
+    margin-top:10px;
+    vertical-align: text-bottom;
+}
+
+input[type="submit"]{
+    margin:10px 0;
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    background-color: #0961c9;
+    color: #fff;
+    font-size: 14px;
+}
+input[type="submit"]:hover{
+    background-color: #06438c;
+    cursor: pointer;
+    transition-duration: .5s;
+
+}
+.section-title{
+    padding-bottom: 0;
+}
+
+@media only screen and (max-width: 768px){
+    .section-title{
+        padding: 0;
+    }
+    .section-title .container{
+        padding: 0 50px;
+    }
+    .section-title h1{
+        text-align: left;
+        width: 100%;
+        font-weight: 600;
+    }
+    .job-details{
+        width: 100%;
+        display: block;
+    }
+    .job-desc{
+        width: 100%;
+        /* text-align: justify; */
+    }
+    .form{
+        width: 100%;
+        margin: 30px 0;
+    }
+}
