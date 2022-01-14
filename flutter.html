@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Mobile App Developer (Flutter)">
+    <meta name="description" content="">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://careers.cagtu.com/flutter.html">
+    <meta property="og:title" content="We are hiring Mobile App Developer (Flutter)">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="images/meta.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://careers.cagtu.com/flutter.html">
+    <meta property="twitter:title" content="We are hiring Mobile App Developer (Flutter)">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="images/meta.png">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/jobs.css">
@@ -11,19 +29,26 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/navbar.css">
     <title>Careers | Flutter</title>
+
+    <script>
+        function func(){
+            var x = document.URL;
+            document.getElementById("fbFrame").src = "https://www.facebook.com/plugins/share_button.php?href="+x+"&layout=button&size=small&width=94&height=20&appId"
+        }
+    </script>
 </head>
-<body>
+<body onload="func();">
     <!-- Nav Bar -->
     <div class="nav">
         <div class="container">
             <div class="nav_wrapper">
                 <div class="logo">
-                    <a href="index.html"><img src="images/logo-white.png" alt=""></a>
+                    <a href="https://.cagtu.com/"><img src="images/logo-white.png" alt=""></a>
                 </div>
                 <div class="nav-links" id="nav-links">
                     <ul>
-                        <a href="index.html"><li>Home</li></a>
-                        <a href="index.html"><li>Career</li></a>
+                        <a href="https://cagtu.com/"><li>Home</li></a>
+                        <a href="https://careers.cagtu.com/"><li>Career</li></a>
                     </ul>
                 </div>
                 <div class="toggle">
@@ -36,8 +61,8 @@
             </div>
             <div class="nav-links-active-hide" id="nav-links-active-hide">
                 <ul>
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>Career</li></a>
+                    <a href="https://cagtu.com/"><li>Home</li></a>
+                    <a href="https://careers.cagtu.com/"><li>Career</li></a>
                 </ul>
             </div>
         </div>
@@ -90,14 +115,28 @@
                         <p>Job Location:<span>Kathmandu, Nepal</span></p>
                     </div>
                     <div class="back">
-                        <a href="index.html"><i class="fa fa-arrow-left"></i> Go back to listings</a>
+                        <a href="https://careers.cagtu.com/"><i class="fa fa-arrow-left"></i> Go back to listings</a>
                     </div>
                 </div>
                 <div class="form">
                     <div class="form-wrapper">
-                        <h2>How to Apply?</h2>
-                        <p>Please send us your resume at<a href="mailto:someone@yoursite.com"><strong>careers@cagtu.com</strong></a></p>
+                        <h2>Join With Us</h2>
                         <img src="images/resume.png" alt="">
+                        <p>Please send us your resume at<a href="mailto:careers@cagtu.com"><strong>careers@cagtu.com</strong></a></p>
+                        <!-- <p class="or">or</p> -->
+                        <!-- <input type="submit" value="Apply Now"> -->
+
+                        
+                        <div class="share">
+                            <p>Please Share:</p>
+                            <div class="frames">
+                                <iframe id="fbFrame" src="" width="94" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                <div class="a2a_kit a2a_default_style">
+                                    <a class="a2a_button_linkedin_share" data-url="https://careers.cagtu.com/ui.html"></a>
+                                </div>
+                                <iframe id="twitterFrame" allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/tweet_button.html?size=medium" style="width:130px; height:20px;"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -111,8 +150,8 @@
                             <div class="fcolumn">
                                 <h3>Quick Links</h3>
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="">Career</a></li>
+                                    <li><a href="https://cagtu.com/">Home</a></li>
+                                    <li><a href="https://careers.cagtu.com/">Career</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -146,5 +185,7 @@
     </div> 
 
     <script src="js/nav.js"></script>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+
 </body>
 </html>
